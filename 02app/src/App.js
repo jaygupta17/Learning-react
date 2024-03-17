@@ -4,7 +4,9 @@ function App() {
   const [numAllowed, setNumAllowed] = useState(false);
   const [charAllowed, setcharAllowed] = useState(false);
   const [password, setpassword] = useState("");
-
+  let generate = ()=>{
+    
+  }
   return (
     <>
       <div className="bg-gray-500 h-screen w-full flex justify-center items-center">
