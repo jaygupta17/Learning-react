@@ -1,6 +1,6 @@
 function Github() {
   return (
-    <div>Github</div>
+    <div className="h-[80%] w-full">Github</div>
   )
 }
 

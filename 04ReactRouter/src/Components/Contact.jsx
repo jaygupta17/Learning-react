@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div>Contact</div>
+    <div className="h-[80%] w-full">Contact</div>
   )
 }
 
