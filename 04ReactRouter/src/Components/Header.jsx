@@ -2,7 +2,7 @@ import {NavLink } from "react-router-dom"
 
 function Header() {
   return (
-        <div className="bg-neutral-800 md:h-[10%] w-full flex justify-between items-center sm:flex-col md:flex-row sm:h[20%]">
+        <div className="bg-neutral-800 md:h-[10vh] w-full flex justify-between items-center sm:flex-col md:flex-row sm:h[20%]">
             <div className="text-xl font-semibold text-gray-100 w-[15%] flex justify-center items-center"> 
                 Jay G
             </div>
@@ -18,7 +18,7 @@ function Header() {
                     </NavLink>                   
                 </li>
                 <li>
-                    <NavLink to="/contact" className={({isActive})=>`font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-red-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${isActive? "text-redred-500": "text-gray-200"}`}>
+                    <NavLink to="/contact" className={({isActive})=>`font-semibold relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-red-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center ${isActive? "text-red-500": "text-gray-200"}`}>
                         Contact
                     </NavLink>
                 </li>

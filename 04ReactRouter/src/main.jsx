@@ -6,7 +6,7 @@ import Home from "./Components/Home"
 import Layout from './Components/Layout'
 import About from './Components/About'
 import Contact from './Components/Contact'
-import Github from './Components/Github'
+import Github, { gitInfo } from './Components/Github'
 import User from './Components/User'
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -14,10 +14,15 @@ const router = createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='contact' element={<Contact/>}/>
-      <Route path='github' element={<Github/>}/>
+      <Route
+       loader={gitInfo}
+       path='github'
+       element={<Github/>}
+      />
       <Route path='user/' element={<User/>}>
         <Route path=':userId' element={<User/>}/>
       </Route>
+      <Route path='*' element={<div>Page Not Found</div>} />
     </Route>
   )
 )
