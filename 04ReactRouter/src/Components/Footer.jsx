@@ -1,11 +1,9 @@
-import React from 'react'
-
 function Footer() {
   return (
-    <div>
-        
+    <div className="h-[10%] w-full bg-neutral-800 flex justify-center items-center text-neutral-400">
+         Jay Gupta  2024  Email: jayajaygupta16@gmail.com
     </div>
   )
 }
 
-export default Footer;
+export default Footer
